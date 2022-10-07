@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListaEntrega" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1e3113c2-f2bf-4033-a3c5-e680c1bb7a4a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="nome_entregador" class="java.lang.String">
+		<fieldDescription><![CDATA[nome_entregador]]></fieldDescription>
+	</field>
+	<field name="estadoEntrega" class="java.lang.String">
+		<fieldDescription><![CDATA[estadoEntrega]]></fieldDescription>
+	</field>
+	<field name="data_entrega" class="java.lang.String">
+		<fieldDescription><![CDATA[data_entrega]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="175" y="13" width="170" height="30" uuid="23a79d3d-9ea7-4fba-b3b2-b382de99a13e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Atelie Lucia]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="80" y="6" width="360" height="30" uuid="226f0910-e192-4e88-a58d-7695c932e6f2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio de Entregas Cadastradas]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="d368e7f4-b40e-466a-8861-da95918dd8fc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1895b3e1-e93c-4632-a892-fff2d247fc37"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="179" height="20" uuid="5b0275b0-a3dc-482d-9ff3-b30a7dbee648">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="230d9c54-7835-411d-a90f-999287848557"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Entregador]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="20" uuid="13fd8651-4bdb-4b8b-9267-9b692c7c53d9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e43384e4-a405-41b8-a830-5854a59a980a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado Entrega]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="20" uuid="bf6df403-5dd4-4c7f-8f57-782390664a2b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d8d8ce6c-1a1d-4dc4-84ef-5dc18b7a286c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data de Entrega]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="7882fa8c-438c-48d8-b2d4-df9a2e16a272">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="90a47af0-0fd5-486a-bd86-e1121c60d8ac"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="179" height="20" uuid="70975f5e-67a4-4b2c-8ed3-e2474df34da1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2078097-ee4a-423b-b619-58543a7c4cc5"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome_entregador}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="20" uuid="e4c154c1-d7dd-49ac-9616-1abeb0594274">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="840cbdc8-dcb7-4bab-b5d2-b98356c97027"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{estadoEntrega}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="20" uuid="1e607483-98b1-46a1-8d1c-db4be5896870">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1f01ba39-d000-4201-9a8e-5afe9f0fbd60"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{data_entrega}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="5" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="85" height="20" uuid="a9e1ede8-c171-412c-8fdb-4a3f3e6ca563"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data Emissão:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="85" y="1" width="305" height="19" uuid="93cb4592-7804-4960-9c1f-aae2adc33e51"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="0" width="50" height="20" uuid="3f2abef8-9c15-4728-bae1-55a9edfe1b30"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pag.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="440" y="0" width="115" height="20" uuid="f3bf3ebf-54d1-4c4a-98c2-b38fc22a2ed6"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

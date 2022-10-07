@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f7a3792a-535f-4e39-8513-6e106e4a2b49">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\main\resources\lib\DataAdapter.xml"/>
+	<parameter name="CODIGO_INICIAL" class="java.lang.Integer"/>
+	<parameter name="CODIGO_FINAL" class="java.lang.Integer"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `ID_Cliente`,
+	`NOME_Cliente`,
+	`CPF_Cliente`,
+	`CELULAR_Cliente`,
+	`EMAIL_Cliente`
+FROM 
+	projeto.tab_cliente 
+	WHERE projeto.tab_cliente.`ID_Cliente` >=  $P{CODIGO_INICIAL} 
+	AND projeto.tab_cliente.`ID_Cliente` <=  $P{CODIGO_FINAL}]]>
+	</queryString>
+	<field name="ID_Cliente" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="ID_Cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID_Cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_cliente"/>
+	</field>
+	<field name="NOME_Cliente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NOME_Cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="NOME_Cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_cliente"/>
+	</field>
+	<field name="CPF_Cliente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CPF_Cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="CPF_Cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_cliente"/>
+	</field>
+	<field name="CELULAR_Cliente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CELULAR_Cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="CELULAR_Cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_cliente"/>
+	</field>
+	<field name="EMAIL_Cliente" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="EMAIL_Cliente"/>
+		<property name="com.jaspersoft.studio.field.label" value="EMAIL_Cliente"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_cliente"/>
+	</field>
+	<variable name="ID_Cliente1" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{ID_Cliente}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="59" splitType="Stretch">
+			<staticText>
+				<reportElement x="192" y="24" width="170" height="30" uuid="53a49761-1b41-4e54-97bb-beca5fffff18"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Atelie Lucia]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="5" width="380" height="30" uuid="1a6d522a-f1f5-4418-99f0-29cc554bc3d3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio de Clientes Cadastrados]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="70" height="20" uuid="f8398df0-2855-47ac-bbba-27a029e2a652">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="270e265a-c2b2-4c2d-ab33-5bc19605027c"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="0" width="170" height="20" uuid="8948baef-d348-4b9f-a0d3-539eb14ac5e3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6c846b4-650f-49bc-8f15-8cd6c73a646c"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="93" height="20" uuid="912b1335-8705-44c7-926e-df00d9d36e52">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="509e76af-ac95-46b7-92de-3cf3bc3940dc"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="87" height="20" uuid="9977eaee-a461-4ab2-9489-d20411297f45">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59ff43ce-74f9-49c4-80ed-9f33bea7efb6"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CELULAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="0" width="135" height="20" uuid="fec5e16d-6af2-4ab1-b8ec-81f79dc67b9f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d29f99b-5214-4c67-81a4-5163fd5d1975"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="70" height="30" uuid="45439dad-9dd8-4091-b385-61b3e3c8ebdf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="270e265a-c2b2-4c2d-ab33-5bc19605027c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ID_Cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="0" width="170" height="30" uuid="1cd07e36-18df-426d-af4c-cee0da5fdb3b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a6c846b4-650f-49bc-8f15-8cd6c73a646c"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{NOME_Cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="87" height="30" uuid="eeab79a6-913b-404d-bb81-ae6d95e2f78c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59ff43ce-74f9-49c4-80ed-9f33bea7efb6"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CELULAR_Cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="93" height="30" uuid="7cbc9a4b-5663-4d38-829e-77b43af6c6ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="509e76af-ac95-46b7-92de-3cf3bc3940dc"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{CPF_Cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="135" height="30" uuid="23950368-7d81-4642-8deb-7a0cc9f94971">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7d29f99b-5214-4c67-81a4-5163fd5d1975"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{EMAIL_Cliente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="22" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="85" height="20" uuid="e15b4ea6-493c-4062-881f-ea752466e4f3"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data Emissão:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="85" y="1" width="140" height="19" uuid="cbc84c53-0e9c-43b1-95e8-499e7b883cff"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="70" height="20" uuid="b759e620-3d94-4563-86da-2f162c46efcd"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="0" width="50" height="20" uuid="ac59c3be-8483-434f-93ae-f203b8ea3019"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pag.]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="90" height="22" uuid="efd18e1a-3a7a-4ee5-8bce-f0a15b067fc1"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Registros:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="90" y="0" width="100" height="22" uuid="996b73c5-e3f3-42c7-a395-1d3ae635d6d8"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{ID_Cliente1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

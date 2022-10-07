@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListaCliente" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b9dbd971-a48a-47b9-a06a-587948a12e28">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="TOTAL_REGISTROS" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[nome]]></fieldDescription>
+	</field>
+	<field name="cpf" class="java.lang.String">
+		<fieldDescription><![CDATA[cpf]]></fieldDescription>
+	</field>
+	<field name="celular" class="java.lang.String">
+		<fieldDescription><![CDATA[celular]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[email]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="52" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="10" width="170" height="30" uuid="47cf6870-0d42-45ac-82bd-40bb3c8417e7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Atelie Lucia]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="5" width="380" height="30" uuid="4ed91d5b-1972-4c42-b4e2-395b851a895d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio de Clientes Cadastrados]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="22" uuid="6ec7a594-863a-4dbf-b842-ea82baa9bf23">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f407b35-a232-4fdb-9237-16efcc81789b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="22" uuid="557c5877-72fa-4cad-9c66-030b8206da7c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5cb83265-617e-4317-9496-8af9fe60fc81"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="22" uuid="0635c75c-dc32-40d9-863a-80f01db1e1c4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="587f45f6-2ab6-44d2-b37e-e632495489bb"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CPF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="22" uuid="4fb5aea9-a00b-4243-87fb-2a8787afba24">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43da565e-cf93-4ca8-9e63-64ec0ca7a8e3"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TELEFONE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="22" uuid="ada86e1e-9fb7-4e3a-a6a9-060b45bf96c3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f8d090a3-4633-44d6-a4c9-1fdccb209b47"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EMAIL]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="20" uuid="f7829e6b-6463-4217-8859-ff005ed4f4b4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9f407b35-a232-4fdb-9237-16efcc81789b"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="20" uuid="ca2597b7-48af-45a7-bcd3-bc40568586e5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5cb83265-617e-4317-9496-8af9fe60fc81"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="20" uuid="ad417daf-9a23-46f3-9f9c-5a985f85d89d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="587f45f6-2ab6-44d2-b37e-e632495489bb"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cpf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="20" uuid="fd77fbb6-94ad-46d1-8340-f13828d1faf7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="43da565e-cf93-4ca8-9e63-64ec0ca7a8e3"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{celular}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="20" uuid="c25b7f8b-9cc8-463f-b1ce-5fdf32fbce13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f8d090a3-4633-44d6-a4c9-1fdccb209b47"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="10" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="5" y="-1" width="85" height="20" uuid="f0d967a2-26b2-4bbe-87e6-7114c6343323"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data Emissão:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="90" y="0" width="305" height="19" uuid="02c75edf-658f-489b-a002-1366d24d90f4"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="395" y="-1" width="50" height="20" uuid="d54ad124-5d8e-4298-a50d-2d15d9bfaaa7"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pag.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="-1" width="110" height="20" uuid="32c3c22c-4961-427f-8eea-97ba966ee667"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="100" y="0" width="455" height="20" uuid="097cefc6-f036-4717-b539-0384304c8826"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TOTAL_REGISTROS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="1" width="95" height="18" uuid="4c3849e9-83bc-47ee-b808-264da77b4c4c"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Registros:]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

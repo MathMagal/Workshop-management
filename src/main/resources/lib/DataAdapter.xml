@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdbcDataAdapter class="net.sf.jasperreports.data.jdbc.JdbcDataAdapterImpl"><name>Conector</name><driver>com.mysql.jdbc.Driver</driver><username>root</username><password></password><savePassword>true</savePassword><url>jdbc:mysql://localhost:3306/projeto</url><database></database><serverAddress></serverAddress><classpath>D:\Faculdade\6 semestre\Programação orientada a evento\projeto java\com.projeto\src\main\resources\lib\mysql-connector-java-5.1.22.jar</classpath></jdbcDataAdapter>

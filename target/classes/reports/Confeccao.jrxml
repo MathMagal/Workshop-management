@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.18.1.final using JasperReports Library version 6.18.1-9d75d1969e774d4f179fb3be8401e98a0e6d1611  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="58797b25-35f7-4651-9ca4-82927810fed8">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[cHJvamV0by50YWJfY29uZmVjY2FvIEFTICwxMjEsMTQ0LDg2NTRiNjBlLWQ0NGQtNDQ2Mi1iY2Q3
+LTA4YzE1YzFkMWUzOTs=]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="src\main\resources\lib\DataAdapter.xml"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT `ID_Cofeccao`,
+	`FIM_confeccao`,
+	`INICIO_confeccao`,
+	`ESTADO_confeccao`
+FROM projeto.tab_confeccao]]>
+	</queryString>
+	<field name="ID_Cofeccao" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="ID_Cofeccao"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID_Cofeccao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_confeccao"/>
+	</field>
+	<field name="FIM_confeccao" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FIM_confeccao"/>
+		<property name="com.jaspersoft.studio.field.label" value="FIM_confeccao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_confeccao"/>
+	</field>
+	<field name="INICIO_confeccao" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="INICIO_confeccao"/>
+		<property name="com.jaspersoft.studio.field.label" value="INICIO_confeccao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_confeccao"/>
+	</field>
+	<field name="ESTADO_confeccao" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ESTADO_confeccao"/>
+		<property name="com.jaspersoft.studio.field.label" value="ESTADO_confeccao"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="tab_confeccao"/>
+	</field>
+	<group name="ID_Cofeccao">
+		<groupExpression><![CDATA[$F{ID_Cofeccao}]]></groupExpression>
+	</group>
+	<group name="FIM_confeccao">
+		<groupExpression><![CDATA[$F{FIM_confeccao}]]></groupExpression>
+	</group>
+	<group name="INICIO_confeccao">
+		<groupExpression><![CDATA[$F{INICIO_confeccao}]]></groupExpression>
+	</group>
+	<group name="ESTADO_confeccao">
+		<groupExpression><![CDATA[$F{ESTADO_confeccao}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="63" splitType="Stretch">
+			<staticText>
+				<reportElement x="192" y="16" width="170" height="30" uuid="bb137b89-b641-44a2-8320-65ce4ed13733"/>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Atelie Lucia]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="87" y="10" width="380" height="30" uuid="9a7ee900-fee4-43bf-9feb-b4c2a6d2e262"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatorio de Confecções Cadastradas]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="20" uuid="9a6235d6-45fc-4eb3-afc9-daf653be105c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2d37ed9d-2436-461d-9f2e-081346ac5643"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="20" uuid="acd5e93b-ac91-4df2-921a-1d25305b71a1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b542cb96-6421-4d45-a77b-27c31e190771"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Inicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="20" uuid="c8833301-fcf4-49ac-89c4-7252fe0e168e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b16ffed2-c157-43e3-b74b-aeca0333e180"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data Final]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="20" uuid="9a5043ab-f46c-4034-823d-dca9800e665d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="41e4a5aa-5a82-470a-a8aa-5b906d28ca57"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Estado Confecção]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="f73a26b7-78e2-43ba-94dd-372ca9befecf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2d37ed9d-2436-461d-9f2e-081346ac5643"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID_Cofeccao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="138" height="30" uuid="64b328b2-0db9-41b1-b2af-b4334c57d729">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b16ffed2-c157-43e3-b74b-aeca0333e180"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{INICIO_confeccao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="520d32d9-4e0c-49c2-8cf6-43e3846718ef">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="41e4a5aa-5a82-470a-a8aa-5b906d28ca57"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ESTADO_confeccao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="0" width="138" height="30" uuid="71f4384c-2963-4bfb-8576-1fd95a252706">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b542cb96-6421-4d45-a77b-27c31e190771"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Tahoma" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FIM_confeccao}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="13" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="85" height="20" uuid="276e230e-09d2-4d6a-81a4-e46327b852d5"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Data Emissão:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="85" y="1" width="140" height="19" uuid="4e65b42f-43af-42f8-892b-4c0f0b992e15"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="390" y="0" width="50" height="20" uuid="0feec423-447e-4a1b-89ec-669ea0fa697f"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pag.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="440" y="0" width="70" height="20" uuid="19bea19f-473e-4de0-8482-5a6a860f3b12"/>
+				<textElement>
+					<font fontName="Tahoma" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="38" splitType="Stretch"/>
+	</summary>
+</jasperReport>
